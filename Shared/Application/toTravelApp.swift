@@ -11,12 +11,14 @@ import SwiftUI
 struct toTravelApp: App {
     //Coreda Data
     @StateObject var coreData = PersistentCloudKitContainer()
+    // User preference settings
+    @StateObject var userPreferences = UserPreferences()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, coreData.persistentContainer.viewContext)
-                //.environmentObject(userPreferences)
+                .environmentObject(userPreferences)
         }
     }
 }

@@ -39,6 +39,10 @@
 		137F831926CED6AF00DA9192 /* UserPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F831726CED6AF00DA9192 /* UserPreferencesModel.swift */; };
 		137F831E26CED6F100DA9192 /* ColorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F831D26CED6F100DA9192 /* ColorsModel.swift */; };
 		137F831F26CED6F100DA9192 /* ColorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F831D26CED6F100DA9192 /* ColorsModel.swift */; };
+		137F832326CED84600DA9192 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F832226CED84600DA9192 /* SideBarView.swift */; };
+		137F832426CED84600DA9192 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F832226CED84600DA9192 /* SideBarView.swift */; };
+		137F832626CED85600DA9192 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F832526CED85600DA9192 /* TabBarView.swift */; };
+		137F832726CED85600DA9192 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F832526CED85600DA9192 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,8 @@
 		137F831326CED65A00DA9192 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		137F831726CED6AF00DA9192 /* UserPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesModel.swift; sourceTree = "<group>"; };
 		137F831D26CED6F100DA9192 /* ColorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsModel.swift; sourceTree = "<group>"; };
+		137F832226CED84600DA9192 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
+		137F832526CED85600DA9192 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 		137F82F626CEB2A800DA9192 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				137F832126CED83700DA9192 /* Navigation */,
 				137D6C7626CE0B2E00D5A6C2 /* ContentView.swift */,
 			);
 			path = Views;
@@ -206,6 +213,15 @@
 				137F831D26CED6F100DA9192 /* ColorsModel.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		137F832126CED83700DA9192 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				137F832226CED84600DA9192 /* SideBarView.swift */,
+				137F832526CED85600DA9192 /* TabBarView.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +333,9 @@
 				137F830026CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift in Sources */,
 				137F82FE26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift in Sources */,
 				137F831826CED6AF00DA9192 /* UserPreferencesModel.swift in Sources */,
+				137F832326CED84600DA9192 /* SideBarView.swift in Sources */,
 				137D6C8826CE0B3000D5A6C2 /* ContentView.swift in Sources */,
+				137F832626CED85600DA9192 /* TabBarView.swift in Sources */,
 				137F830E26CED5C700DA9192 /* Color+Ext.swift in Sources */,
 				137F831126CED60500DA9192 /* Binding+Ext.swift in Sources */,
 			);
@@ -338,7 +356,9 @@
 				137F830126CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift in Sources */,
 				137F82FF26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift in Sources */,
 				137F831926CED6AF00DA9192 /* UserPreferencesModel.swift in Sources */,
+				137F832426CED84600DA9192 /* SideBarView.swift in Sources */,
 				137D6C8926CE0B3000D5A6C2 /* ContentView.swift in Sources */,
+				137F832726CED85600DA9192 /* TabBarView.swift in Sources */,
 				137F830F26CED5C700DA9192 /* Color+Ext.swift in Sources */,
 				137F831226CED60500DA9192 /* Binding+Ext.swift in Sources */,
 			);
