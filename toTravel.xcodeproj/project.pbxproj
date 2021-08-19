@@ -19,6 +19,16 @@
 		137D6C8D26CE0B3000D5A6C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137D6C7826CE0B3000D5A6C2 /* Assets.xcassets */; };
 		137D6C9A26CE0C0500D5A6C2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D6C9926CE0C0500D5A6C2 /* CloudKit.framework */; };
 		137D6C9C26CE0C3300D5A6C2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D6C9B26CE0C3300D5A6C2 /* CloudKit.framework */; };
+		137F82FE26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FA26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift */; };
+		137F82FF26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FA26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift */; };
+		137F830026CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FB26CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift */; };
+		137F830126CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FB26CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift */; };
+		137F830226CEBAAD00DA9192 /* Travel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FC26CEBAAD00DA9192 /* Travel+CoreDataClass.swift */; };
+		137F830326CEBAAD00DA9192 /* Travel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FC26CEBAAD00DA9192 /* Travel+CoreDataClass.swift */; };
+		137F830426CEBAAD00DA9192 /* Travel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FD26CEBAAD00DA9192 /* Travel+CoreDataProperties.swift */; };
+		137F830526CEBAAD00DA9192 /* Travel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F82FD26CEBAAD00DA9192 /* Travel+CoreDataProperties.swift */; };
+		137F830A26CED0C900DA9192 /* DataFormat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F830926CED0C900DA9192 /* DataFormat+Ext.swift */; };
+		137F830B26CED0C900DA9192 /* DataFormat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F830926CED0C900DA9192 /* DataFormat+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +43,11 @@
 		137D6C9726CE0BF700D5A6C2 /* toTravel--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "toTravel--iOS--Info.plist"; sourceTree = "<group>"; };
 		137D6C9926CE0C0500D5A6C2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		137D6C9B26CE0C3300D5A6C2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		137F82FA26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		137F82FB26CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		137F82FC26CEBAAD00DA9192 /* Travel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Travel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		137F82FD26CEBAAD00DA9192 /* Travel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Travel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		137F830926CED0C900DA9192 /* DataFormat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFormat+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +84,11 @@
 		137D6C7226CE0B2E00D5A6C2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				137D6C7526CE0B2E00D5A6C2 /* toTravelApp.swift */,
-				137D6C7626CE0B2E00D5A6C2 /* ContentView.swift */,
-				137D6C7726CE0B2E00D5A6C2 /* Persistence.swift */,
+				137F82F926CEB2C200DA9192 /* Application */,
+				137F82F626CEB2A800DA9192 /* Views */,
+				137F82F826CEB2BA00DA9192 /* ViewModel */,
+				137F82F726CEB2B200DA9192 /* Models */,
 				137D6C7826CE0B3000D5A6C2 /* Assets.xcassets */,
-				137D6C7326CE0B2E00D5A6C2 /* toTravel.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -94,6 +109,67 @@
 				137D6C9926CE0C0500D5A6C2 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		137F82F626CEB2A800DA9192 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				137D6C7626CE0B2E00D5A6C2 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		137F82F726CEB2B200DA9192 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				137F830726CEBABF00DA9192 /* Travel */,
+				137F830626CEBAB800DA9192 /* ToDo */,
+				137D6C7326CE0B2E00D5A6C2 /* toTravel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		137F82F826CEB2BA00DA9192 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				137D6C7726CE0B2E00D5A6C2 /* Persistence.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		137F82F926CEB2C200DA9192 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				137F830826CED09700DA9192 /* Extensions */,
+				137D6C7526CE0B2E00D5A6C2 /* toTravelApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		137F830626CEBAB800DA9192 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				137F82FA26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift */,
+				137F82FB26CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		137F830726CEBABF00DA9192 /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				137F82FC26CEBAAD00DA9192 /* Travel+CoreDataClass.swift */,
+				137F82FD26CEBAAD00DA9192 /* Travel+CoreDataProperties.swift */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
+		137F830826CED09700DA9192 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				137F830926CED0C900DA9192 /* DataFormat+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137F830A26CED0C900DA9192 /* DataFormat+Ext.swift in Sources */,
 				137D6C8626CE0B3000D5A6C2 /* toTravelApp.swift in Sources */,
 				137D6C8A26CE0B3000D5A6C2 /* Persistence.swift in Sources */,
+				137F830226CEBAAD00DA9192 /* Travel+CoreDataClass.swift in Sources */,
+				137F830426CEBAAD00DA9192 /* Travel+CoreDataProperties.swift in Sources */,
 				137D6C8426CE0B3000D5A6C2 /* toTravel.xcdatamodeld in Sources */,
+				137F830026CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift in Sources */,
+				137F82FE26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift in Sources */,
 				137D6C8826CE0B3000D5A6C2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,9 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137F830B26CED0C900DA9192 /* DataFormat+Ext.swift in Sources */,
 				137D6C8726CE0B3000D5A6C2 /* toTravelApp.swift in Sources */,
 				137D6C8B26CE0B3000D5A6C2 /* Persistence.swift in Sources */,
+				137F830326CEBAAD00DA9192 /* Travel+CoreDataClass.swift in Sources */,
+				137F830526CEBAAD00DA9192 /* Travel+CoreDataProperties.swift in Sources */,
 				137D6C8526CE0B3000D5A6C2 /* toTravel.xcdatamodeld in Sources */,
+				137F830126CEBAAD00DA9192 /* ToDo+CoreDataProperties.swift in Sources */,
+				137F82FF26CEBAAD00DA9192 /* ToDo+CoreDataClass.swift in Sources */,
 				137D6C8926CE0B3000D5A6C2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
